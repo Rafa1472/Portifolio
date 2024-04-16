@@ -1,0 +1,518 @@
+/* Reset padrão e definição da fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name-error {
+  color: red;
+}
+
+/* Estilos gerais do corpo */
+body {
+    background-color: #000;
+}
+
+/* Estilos do cabeçalho */
+.topo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    min-height: 60px;
+    z-index: 1000;
+}
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+
+.topo-titulo {
+    font-weight: 600;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.topo-titulo a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.topo-titulo a:hover span {
+    color: crimson;
+}
+
+.topo-logo {
+    height: 60px;
+}
+
+.topo-links {
+    display: flex;
+}
+
+.topo-link {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.topo-link:hover {
+    color: crimson;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    max-width: 1300px;
+    margin: 80px auto 0;
+    padding: 20px;
+}
+
+.container {
+    margin: 20px auto;
+}
+
+.box-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    
+}
+
+.box-principal h1 {
+    margin-bottom: 10px;
+    color: #ffffffa1;
+}
+
+.box-principal p {
+    margin-bottom: 10px;
+    color: #ffffffa1;
+}
+
+.box-principal ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    list-style: none;
+}
+.box-principal ul li::after {
+    content: url(./img/up-right-arrow.png);
+    bottom: 0%;
+    left: 2px;
+}
+
+.box-principal ul li a {
+    text-decoration: none;
+    font-weight: normal;
+    padding: 5px;
+    color: #ffffffa1;
+}
+
+/* Estilos da imagem de perfil */
+.imgperfil {
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    background-image: url('./img/20240415_204007.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+/* Estilos das seções */
+.sobre {
+    background-color: #fff;
+}
+
+.container-sobre {
+    padding: 4.5%;
+    margin-left: 10%;
+    max-width: 600px;
+}
+
+/* Estilos das especialidades */
+.container-especialidade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.especialidade {
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 6% 6% 0 1%;
+    margin: 10px;
+    width: calc(100% / 4 - 40px); /* Dividindo em 4 colunas */
+}
+
+.especialidade img {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.sbtitulo {
+    text-align: center;
+    padding: 10px;
+    color: #ffffffa1;
+}
+
+.especialidade figcaption {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+/* Estilos da formação acadêmica */
+.container-formacao {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto 50px auto;
+}
+
+.container-formacao h2 {
+    margin: 20px;
+}
+
+.formacao {
+    display: flex;
+    gap: 15px;
+}
+
+.logo-formacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-formacao figcaption {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffffa1;
+}
+
+.logo-formacao span {
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffffa1;
+}
+
+.logo-formacao img {
+    max-width: 100%;
+    width: 600px;
+    max-height: 600px;
+    height: 600px;
+}
+
+
+/* Estilos da experiência profissional */
+.container-profissao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.profissao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos do projeto */
+.projeto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px; 
+}
+
+/* Estilos da imagens de projeto */
+.projeto img {
+    max-width: 100%;
+    max-height: 700px; 
+    height: 700px;
+    box-shadow: 0px 3px 3px #ffffffa1;
+}
+
+.projeto figcaption {
+    color: #ffffffa1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.projeto figcaption p {
+    margin-top: 10px;
+}
+
+.projeto figcaption a {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.projeto figcaption .link2 {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilos do formulário de contato */
+.container-contato {
+    max-width: 100%;
+    width: 78%;
+    background-color: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Estilos do formulário */
+.formulario {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.formulario div {
+    position: relative;
+    z-index: 1;
+}
+
+.formulario label {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 13px;
+    color: #888;
+}
+
+.formulario input {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   margin: 10px 5px;
+   padding: 20px 10px 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 3px #000000a1;
+    border: none;
+    outline: none;
+}
+
+.formulario textarea {
+    width: 100%;
+    margin: 5px;
+    padding: 20px 10px 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 3px #000000a1;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 200px;
+}
+
+.formulario textarea ~ label {
+  top: 100%;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #ccc;
+    box-shadow: 0 0 5px #000000a1;
+}
+
+.formulario button {
+    width: 160px;
+    height: 45px;
+    border: none;
+    background-color: #000;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0 0 5px;
+    cursor: pointer;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #fff;
+    color: #000000a1;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 50px;
+}
+
+/* Estilos gerais para adaptação responsiva */
+@media (max-width: 1440px) {
+    .container {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .box-principal {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .container-especialidade {
+        flex-direction: row;
+        align-items: center; 
+    }
+
+    .especialidade {
+        width: 40%; 
+    }
+
+    .imgperfil {
+        width: 50%;
+        margin: 20px 0;
+    }
+    
+    .formacao {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    
+    .logo-formacao img {
+    max-width: 100%;
+    width: 600px;
+    max-height: 600px;
+    height: 450px;
+    }
+    
+    .formacao figure span {
+      margin-left: 10px;
+    }
+    
+    .projeto img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .projeto figcaption {
+      font-size: 12px;
+      margin: 0 auto;
+    }
+    .container-contato {
+      max-width: 100%;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 15px;
+    }
+
+    .formulario input, .formulario textarea {
+        width: 100%;
+    }
+    
+    .formulario button {
+      width: 50%;
+    }
+}
+
+@media (max-width: 460px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .topo-links a:not(:last-child) {
+      display: none;
+    }
+    
+    .box-principal {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .container-especialidade {
+        flex-direction: column; /* Alterando para layout em coluna */
+        align-items: center; /* Centralizando os itens verticalmente */
+    }
+
+    .especialidade {
+        width: 90%; /* Reduzindo a largura das especialidades */
+    }
+
+    .imgperfil {
+        width: 100%; /* Fazendo com que a imagem de perfil ocupe toda a largura */
+        margin: 20px 0; /* Adicionando margem superior e inferior */
+    }
+    
+    .formacao {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .formacao figure img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .formacao figure span {
+      margin-left: 10px;
+    }
+    
+    .projeto img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .projeto figcaption {
+      font-size: 12px;
+      margin: 0 auto;
+    }
+    .container-contato {
+      max-width: 100%;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 15px;
+    }
+
+    .formulario input, .formulario textarea {
+        width: 100%; /* Fazendo com que os campos do formulário ocupem toda a largura disponível */
+    }
+    
+    .formulario button {
+      width: 50%;
+    }
+}

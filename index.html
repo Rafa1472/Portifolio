@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Portfólio</title>
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <div class="topo-titulo">
+        <a href="./index.html">
+          <img class="topo-logo" src="./img/icons8-module-100.png" alt="imagem logo" title="imagem logo">
+          <span>Portfólio</span>
+        </a>
+      </div>
+
+      <nav class="topo-links">
+        <a class="topo-link" href="#sobre">Sobre mim</a>
+        <a class="topo-link" href="#skills">Skills</a>
+        <a class="topo-link" href="#hobbie">Hobbies</a>
+        <a class="topo-link" href="#formacao">Formação</a>
+        <a class="topo-link" href="#projeto">Projetos</a>
+        <a class="topo-link" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container ">
+      <div class="box-principal ">
+
+        <div class="imgperfil"></div>
+
+        <div>
+          <h1>Olá, meu nome é Rafael da Conceição da Silva<br> e construo páginas web.</h1>
+          <p>
+            Atualmente estou participando do projeto Oracle ONE na Alura.
+          </p>
+          <ul>
+            <li>
+              <a href="#">LinkedIn</a>
+            </li>
+            <li>
+              <a href="#">GitHub</a>
+            </li>
+            <li>
+              <a href="#">Curriculo</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <section class="container sobre" id="sobre">
+      <div class="container-sobre">
+        <h2>Sobre mim</h2>
+        <p>
+          Olá, meu nome é Rafael e tenho 26 anos, gosto de jogar basquete, ver animes e gosto ler de mangá há webtoon.
+        </p>
+      </div>
+    </section>
+    <section class="container">
+      <div>
+        <h2 class="sbtitulo">Skills</h2>
+
+        <div class="container-especialidade" id="skills">
+          <figure class="especialidade">
+            <img src="./img/skills/html.svg" alt="icon html" title="icon html">
+            <figcaption>Html5</figcaption>
+          </figure>
+          <figure class="especialidade">
+            <img src="./img/skills/css.svg" alt="icon css" title="icon css">
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure class="especialidade">
+            <img src="./img/skills/js.svg" alt="icon javascript" title="con javascript">
+            <figcaption>Javascript</figcaption>
+          </figure>
+        </div>
+
+        <h2 class="sbtitulo">Hobbies</h2>
+
+        <div class="container-especialidade" id="hobbie">
+          <figure class="especialidade">
+            <img src="./img/hobbies/basquete.svg" alt="icon bola-de-basquete" title="jogar basquete">
+            <figcaption>Basquete</figcaption>
+          </figure>
+          <figure class="especialidade">
+            <img src="./img/hobbies/musica.svg" alt="icon fones-de-ouvido-musica" title="ouvir música">
+            <figcaption>Ouvir música</figcaption>
+          </figure>
+          <figure class="especialidade">
+            <img src="./img/hobbies/leitura.svg" alt="icon leitura" title="leitura">
+            <figcaption>Ler mangá</figcaption>
+          </figure>
+          <figure class="especialidade">
+            <img src="./img/hobbies/tv.svg" alt="icon tv" title="assistir series e animes">
+            <figcaption>Séries e animes</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="formacao">
+      <div class="container-formacao">
+        <h2 class="sbtitulo">Formação acadêmica</h2>
+        <div class="formacao">
+          <figure class="logo-formacao">
+            <img src="./img/formacao/unnamed.jpg" alt="logo do CESC" title="logo do CESC">
+            <figcaption>Formado no CESC</figcaption>
+          </figure>
+
+          <figure class="logo-formacao">
+            <img src="./img/formacao/Alura.jpg" alt="logo da Alura" title="logo da Alura">
+            <figcaption>Font-end com ONE</figcaption>
+            <span>Em andamento</span>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="projeto">
+      <div class="container-profissao">
+        <h2 class="sbtitulo">Experiência profissional</h2>
+        <div class="profissao">
+          <figure class="projeto">
+            <img src="./img/ptojeto/Capturar.PNG" alt="print do meu projeto" title="decodificador de texto">
+            <figcaption>
+              <h3>Decodificador de Texto</h3>
+              <span>Challenge Alura Codificador</span>
+              <p>
+                <a class="link1" href="https://github.com/Rafa1472/decodificador">Repositorio</a>
+                <a class="link2" href="https://rafa1472.github.io/decodificador/">DEMO</a>
+              </p>
+
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="contato">
+      <div class="container-contato">
+        <h2>Contato</h2>
+        <p>
+          Quer entrar em contato comigo?
+        </p>
+        <p>
+          Preencha o formulario abaixo, que entrarei em contato o mais rápido possivel.
+        </p>
+        <div>
+          <form id="form" class="formulario">
+            <div>
+              <input type="text" id="nome" name="nome">
+              <label for="nome">Nome</label>
+            </div>
+            <div>
+              <input type="email" name="email" id="email">
+              <label for="email">Email</label>
+            </div>
+            <div>
+              <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+              <label for="assunto"> </label>
+            </div>
+            
+            <div>
+              <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+              <label for="mensagem"> </label>
+            </div>
+
+            <button id="enviar" type="submit" disabled>Enviar mensagem</button>
+          </form>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Copyright &copy;Rafael
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
