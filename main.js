@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
+let alertDisplayed = false;
+
+document.addEventListener('click', function() {
     const form = document.getElementById('form');
     const inputs = form.querySelectorAll('input, textarea');
     const submitBtn = form.querySelector('#enviar');
@@ -147,6 +149,9 @@ document.addEventListener('DOMContentLoaded', function() {
         form.reset();
 
         // Exibir alerta de envio confirmado
-        alert('Sua mensagem foi enviada com sucesso!');
+        if(!alertDisplayed) {
+            alert('Sua mensagem foi enviada com sucesso!');
+            alertDisplayed = true;
+        }
     });
 });
