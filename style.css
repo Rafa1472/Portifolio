@@ -6,10 +6,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.name-error {
-  color: red;
-}
-
 /* Estilos gerais do corpo */
 body {
     background-color: #000;
@@ -464,17 +460,17 @@ footer p {
     }
 
     .container-especialidade {
-        flex-direction: column; /* Alterando para layout em coluna */
-        align-items: center; /* Centralizando os itens verticalmente */
+        flex-direction: column;
+        align-items: center;
     }
 
     .especialidade {
-        width: 90%; /* Reduzindo a largura das especialidades */
+        width: 90%;
     }
 
     .imgperfil {
-        width: 100%; /* Fazendo com que a imagem de perfil ocupe toda a largura */
-        margin: 20px 0; /* Adicionando margem superior e inferior */
+        width: 100%;
+        margin: 20px 0;
     }
     
     .formacao {
@@ -509,7 +505,7 @@ footer p {
     }
 
     .formulario input, .formulario textarea {
-        width: 100%; /* Fazendo com que os campos do formulário ocupem toda a largura disponível */
+        width: 100%;
     }
     
     .formulario button {
